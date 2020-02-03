@@ -1,0 +1,30 @@
+machine learning index by liam<br>
+
+
+<li><a href="http://rocksetta.com/tensorflowjs/">http://rocksetta.com/tensorflowjs/</a>
+<li><a href="20keras-xOr-liam.html">20keras-liam.html</a>
+<li><a href="mobilenet.html">mobilenet.html</a>
+<li><a href="tfjs10-xor-layers.html">tfjs10-xor-layers.html</a>
+<li><a href="24keras-one-hot.html">24keras-one-hot.html</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>

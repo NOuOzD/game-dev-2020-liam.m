@@ -1,0 +1,62 @@
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2"> </script> 
+
+ 
+
+
+ 
+<input id="myButton123" type="button" value="Train Model, then test a Crow" onclick="{
+                                                                                     
+  (async function myGo() {
+    document.getElementById('myButton123').style.backgroundColor = 'green'  
+    const model = tf.sequential();
+    model.add(tf.layers.dense({ units: 30, activation: 'sigmoid', inputShape: [8], }) );  // 8 inputs to 30 hidden layer nodes
+    model.add(tf.layers.dense({ units: 4,  activation: 'sigmoid', }) );  // from the 30 hidden layer nodes to 4 output layer                                                                                  
+    const myOptimizer = tf.train.sgd(0.5); 
+                                                                                               
+    model.compile({optimizer: myOptimizer, loss: 'meanSquaredError'});    
+    const xTrainingData   = tf.tensor2d([1,0,0,0,0,0,0,0,   0,1,0,0,0,0,0,0,   0,0,1,0,0,0,0,0,   0,0,0,1,0,0,0,0,   0,0,0,0,1,0,0,0,   0,0,0,0,0,1,0,0,   0,0,0,0,0,0,1,0,   0,0,0,0,0,0,0,1 ], shape=[8,8], 'int32');      
+    const yTrainingTarget = tf.tensor2d([1,0,0,0,           1,0,0,0,           0,1,0,0,           0,0,1,0,           1,0,0,0,           0,1,0,0,           0,0,1,0,           0,0,0,1  ], shape=[8,4], 'int32');          
+
+    console.log('xTrainingData')
+    xTrainingData.print()
+    console.log('yTrainingTarget')                                                                                 
+    yTrainingTarget.print()
+                                                                                  
+    var myFit = await model.fit(xTrainingData, yTrainingTarget, {
+        batchSize : 64,
+        epochs    : 800,                                                                      
+        callbacks:  { 
+          onEpochEnd: async (epoch, logs) => {                                                                                         
+            document.getElementById('myDiv123').innerHTML = 'Epoch # ' + (epoch+1) + '/800, Loss: ' + logs.loss + '<br><br>'
+            await tf.nextFrame();  // This improves UI responsiveness during training.  
+          }    // end onEpochEnd callback 
+        }      // end all callbacks                                                              
+      })       // end model.fit                                                                                      
+    
+    const xTestArray = [0,0,1,0,0,0,0,0]
+    const xTestData  = tf.tensor2d(xTestArray, shape=[1,8], 'int32')                                                                         
+    const myPredictArray = await model.predict(xTestData).data()   
+    
+    console.log('myPredictArray')       
+    console.log(myPredictArray)                                                                           
+    document.getElementById('myDiv123').innerHTML += 'Using the input code ' + xTestArray +' Which is a crow for this fixed example<br><br>'
+                                                                                  
+
+                                                                                  
+    document.getElementById('myDiv123').innerHTML += '<b>Mammal : '+ Math.round(myPredictArray[0]*100) + '%</b><br>'
+    document.getElementById('myDiv123').innerHTML += '<b>Bird (Aves) : '+ Math.round(myPredictArray[1]*100) + '%</b><br>'
+    document.getElementById('myDiv123').innerHTML += '<b>Reptile : '+ Math.round(myPredictArray[2]*100) + '%</b><br>'
+    document.getElementById('myDiv123').innerHTML += '<b>Amphibians : '+ Math.round(myPredictArray[3]*100) + '%</b><br><br>'
+
+    document.getElementById('myDiv123').innerHTML += 'Note: You would actually train on hundreds of examples not just these 8<br><br>'
+    document.getElementById('myDiv123').innerHTML += 'Now click the black box below and change  epochs : 800, to a larger number and '+
+                                                'click Update and run to see if you can improve your neural network<br>'
+                                                                                                                              
+    document.getElementById('myButton123').style.backgroundColor = 'lightgray' 
+                                                                              
+  } )() // end Async function
+                                                                                                                                                                                                                                        
+}" style="background-color: lightgreen;"><br><br>
+
+
+<div id='myDiv123'>...</div><br>
