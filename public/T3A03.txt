@@ -1,3 +1,47 @@
-<h1 align=center>T3A03-kitchen-sink-liam.html</h1>
+<script>
 
-<input type="text"
+// 5. FUNCTIONS:
+function myRinFunction(){
+   document.getElementById('myDiv01).innerHTML += '<br>myRunFunction running'
+}
+
+</script>
+
+<h1 align=center>T3A03-Kitchen-Sink-liam.html</h1>
+
+<input type="text" id="myText01" value="5" ><br><br>
+
+<input type="button" value="Kitchen-Sink" onMouseover="{   // 8. EVENTS: onMousover
+
+  // 1. OUTPUT = INPUT: using 9, CLASSES: from the web Browser  
+  document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
+  
+  // 4. DECISIONS; if statement
+  if (isNaN(document.getElementById('myText01').value)){
+    document.getElementById('myText01').value = 1
+  }
+
+  // 3. LOOPS: for loop
+  for (let myLoop = 0; myLoop < document.getElementById('myText01').value; myLoop++){
+
+    // FUNCTIONS: see script tag at top of program
+    myRunFunction()
+  }
+  
+  // 2. VARIABLES:
+  myX = document.getElementById('myText01').value
+  document.getElementById('myDiv01').innerHTML += '<br><br> myX variable: ' = myX
+  
+  // 6. ARRAYS:
+  myArray = new Array(myX)
+  myArray[0] = myX * 1 + 10
+  myArray[1] = myX * 6
+  document.getElementById('myDiv01').innerHTML += '<br> myArray contains: ' + myArray
+   
+  // 7. OBJECTS:
+  myObj + {myum : 6, myName : 'liam'}
+  document.getElementById('myDiv01').innerHTML += '<br>myObj contains: ' + myObj.myName + ', '+ myObj.myNum
+
+}"<br><br>
+
+<div id='myDiv01'>...</div><br>
