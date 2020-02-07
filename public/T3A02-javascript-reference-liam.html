@@ -195,4 +195,67 @@ myFun('28')      // This activates the function
 
 
 
+Classes are everything put together.
+Functions inside a class are called "methods"
+Variables inside a class are called "properties"
+If statements, for loops, arrays, objects are all allowed inside a class
+Classes can be extended, so you can add your own functionality to them
+
+ 
+
+<input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{
+                                                                                 
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+
+    myShow(){
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+
+ }  // end class myAnimal
+                                                             
+   
+                                                                                 
+   myDog = new myAnimal('Snickers', 5)
+   myDog.myShow()                                                       
+}"><br><br>
+
+<div id='myDiv130'>...</div><br>
+
+
+Here we extend the class myAnimal to myCat
+
+ 
+
+<input id="myButton131" type="button" value="Extend a class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myCat extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myCat
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPet = new myCat('Fluffy', 14)
+   myPet.myShow()                                                                           
+}"><br><br>
+
+<div id='myDiv131'>...</div><br>
+
+
+
+
 

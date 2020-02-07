@@ -1,11 +1,10 @@
 <h1 align=center>index.html by Liam</h1>
 
 <li><a href="https://github.com/NOuOzD/game-dev-2020-liam.m">My GithubRepository</a>
-<li><a href="https://fullURL">My Website</a>
-
+<li><a href="https://nouozd.github.io/game-dev-2020-liam.m/public/">My Website</a>
 <li><a href="ml/t3a01-machine-learning-index-liam.html">ml/t3a01-machine-learning-index-liam.html</a>
 <li><a href="T3A02-javascript-reference-liam.html">T3A02-javascript-reference-liam.html</a>
-<li><a href="...">...</a>
+<li><a href="T3A03-kitchen-sink-liam.html">T3A03-kitchen-sink-liam.html</a>
 <li><a href="...">...</a>
 <li><a href="...">...</a>
 <li><a href="...">...</a>
