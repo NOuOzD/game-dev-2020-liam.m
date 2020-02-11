@@ -4,3 +4,56 @@
 </head>
 <body>
 <h1 align=center>T3A04-web-Basics-by-Liam.html </h1>
+
+
+<a href="https://www.google.ca">link to google</a><br>
+Plain Text <b> Bold </b> and <i> Italic </i> can you put them together<br>
+<hr>
+This is an image 
+<img width= 300 src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c95afe55141759.59784f5c6405d.jpg"><br>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uD4izuDMUQA"frameborder="0" allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+
+<div id="myDiv01">this is a div</div>
+
+<button type="button" onclick="alert('Not Useless button')">Uselessbutton</button>
+
+<span>this is </span>
+<span> a span</span>
+
+
+<ol> this is an ordered list of foods
+  <li> Pasta
+  <li> steak
+  <li> Sushi
+  <li> Pizza
+  <li> Squid
+  <li> Ramen 
+</ol>
+
+
+<ul> this is an un-ordered list of countires
+  <li> Canada
+  <li> Germany
+  <li> Netherlands
+  <li> Russia
+</ul>
+
+<ul> Table for games 
+<table border=1>
+<tr><th>League of legends</th><th>10/10</th></tr>
+<tr><th>EU 4</th><th>10/10</th></tr>
+<tr><th>Rust</th><th>8.5/10</th></tr>
+<tr><th>Barotruma</th><th>9.5/10</th></tr>
+<tr><th>.</th><th>..</th></tr>
+</table>
+</ul>
+
+you make a 3 x 4 table of something interesting.<br>
+
+Note replace "td" with "th" for bold heading at the start of your table
+
+
+
+
