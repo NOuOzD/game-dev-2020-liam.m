@@ -1,0 +1,3 @@
+<h1 align=center>T3A06-Input-Output-Function-Liam.html </h1>
+
+<b>This is a useless button=></b><button type="button" onclick="alert('Not Useless button')">Uselessbutton</button>

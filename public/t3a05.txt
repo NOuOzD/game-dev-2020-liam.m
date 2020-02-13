@@ -34,5 +34,24 @@ I can write here
 <hr>
 <b> NEW CSS STUFF</b>
 <hr>
+img {
+  float: right;
+}
+</p>
+<p><img src="w3css.gif" width="100" height="140">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
 
 
