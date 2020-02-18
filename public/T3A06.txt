@@ -1,3 +1,46 @@
 <h1 align=center>T3A06-Input-Output-Function-Liam.html </h1>
+<html>
+<body>
 
+<button onclick="this.innerHTML=Date()">The current time?</button>
+
+</body>
+</html>
+
+<hr>
+<input Id="myText01" type=text value="Liam">
+<input type="button" value="Show 1" onclick="{
+  document.getElementById('myDiv01').innerHTML = 'myText01 = '+ document.getElementById('myText01').value
+
+}">
+
+<div id="myDiv01">...</div>
+<hr>
 <b>This is a useless button=></b><button type="button" onclick="alert('Not Useless button')">Uselessbutton</button>
+<hr>
+<html>
+<body>
+
+<button id="btn1" type="button">HTML</button>
+
+<p>Click the "Click me" button to return the type of the "HTML" button:</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("btn1").type;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
+<hr>
+
+
+
+
+

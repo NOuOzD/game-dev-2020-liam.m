@@ -21,9 +21,9 @@
 <html>
 <body>
 
-<button id="btn1" type="button">HTML</button>
+<button id="btn1" type="button">Cool button</button>
 
-<p>Click the "Click me" button to return the type of the "HTML" button:</p>
+<p>Click the "Click me" button to say button:</p>
 
 <button onclick="myFunction()">Click me</button>
 
@@ -39,6 +39,126 @@ function myFunction() {
 </body>
 </html>
 <hr>
+<html>
+<body> 
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:green;width:60px;height:15px;padding:20px;">
+BIG BUTTON</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "It works"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "BIG BUTTON"
+}
+</script>
+
+</body>
+</html> 
+<hr>
+<html>
+<head>
+
+<script>
+function mymessage() {
+  alert("This is an function and it works!!");
+}
+</script>
+</head>
+
+<body onload="mymessage()">
+</body>
+
+</html>
+<hr>
+<html>
+<body>
+
+<h1 onmouseover="style.color='green'"
+onmouseout="style.color='red'">
+Mouse over text plz</h1>
+
+</body>
+</html>
+<hr>
+<html>
+<head>
+<script>
+function lighton() {
+  document.getElementById('myimage').src = "https://media3.giphy.com/media/3o7WIBR5Iwv04A1uOQ/giphy.gif?cid=790b761168d8391e2ff91c9e6aa27a06fec95fcc22ca7728&rid=giphy.gif";
+}
+function lightoff() {
+  document.getElementById('myimage').src = "https://media3.giphy.com/media/3o7WIBR5Iwv04A1uOQ/giphy.gif?cid=790b761168d8391e2ff91c9e6aa27a06fec95fcc22ca7728&rid=giphy.gif";
+}
+</script>
+</head>
+
+<body>
+
+<img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="bulboff.gif" width="150" height="230" />
+
+<p>Click on the SRC to make it work.</p>
+
+</body>
+</html>
+<hr>
+<html>
+<body>
+
+<h1 onmouseover="style.color='green'"
+<h1 onclick="this.innerHTML='Boom!'">Click Me</h1>
+
+</body>
+</html>
+<hr>
+<html>
+<head>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+
+Enter words: <input type="text" id="fname" onchange="myFunction()">
+
+<b>When you type words it becomes uppercased.</b>
+
+</body>
+</html>
+<hr>
+<html>
+<head>
+<script>
+function myFunction(x) {
+  x.style.background = "green";
+}
+</script>
+</head>
+<body>
+
+Enter words: <input type="text" onfocus="myFunction(this)">
+
+<b>when focus is put on the text box it changes the background-color.</b>
+
+</body>
+</html>
+<hr>
+
+
+
+
+
+
+
+
+
+
 
 
 
