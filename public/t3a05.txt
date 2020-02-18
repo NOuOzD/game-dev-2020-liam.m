@@ -1,4 +1,13 @@
 <h2 align=cen ter>T3A05 Advanced Web Pages by Liam.html </h2>
+<html>
+<head>
+<style>
+img {
+  float: right;
+}
+</style>
+</head>
+<body>
 
 Links to >= 3 HTML CSS and Form resources such as:
 <a href="https://www.w3schools.com/tags/default.asp">W3Schools HTML Referece</a><br>
@@ -34,24 +43,91 @@ I can write here
 <hr>
 <b> NEW CSS STUFF</b>
 <hr>
-img {
-  float: right;
+</p>
+<p><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6e299255141759.59784f5c62aaf.jpg" width="100" height="140">
+This is a example of <b> FLOAT not BLOAT </b> the image is ment to go
+to the right of this paragraph since the cammand is float.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+</body>
+</html>
+<hr>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
 }
-</p>
-<p><img src="w3css.gif" width="100" height="140">
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-</p>
+</style>
+</head>
+<body>
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:blue">
+    <col style="background-color:green">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>foods</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>cookie</td>
+    <td>$666</td>
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>sandwich</td>
+    <td>$3432</td>
+  </tr>
+</table>
+
+</body>
+</html>
+<hr>
+<html>
+<body>
+
+<footer>
+  <p>Posted by: Liam, MacAdam</p>
+  <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+</footer>
+
+<p><strong>Note:</strong> this is a footer CSS.</p>
+
+</body>
+</html>
+<hr>
+<html>
+<body>
+
+<ruby>
+ 漢 <rt> ㄏㄢˋ </rt>
+</ruby>
+<b>this is ex of ruby</b>
+</body>
+</html>
+<hr>
+
+
+
+
+
+
 
 
