@@ -1,0 +1,32 @@
+<h1 align=center>T3A07-Decisions-by-Liam.html </h1>
+<html>
+<body>
+
+<input Id="myText01" type=text value="5">
+<input type="button" value="Decision" onclick="{
+
+ if (document.getElementById('myText01').value == 5){ 
+ document.getElementById('myDiv01').innerHTML += '<br>It is a Five, input was: '+ document.getElementById('myText01').value
+ }
+ else if (document.getElementById('myText01').value == 4){
+ document.getElementById('myDiv01').innerHTML += '<br>It is a Four, input was: '+ document.getElementById('myText01').value
+ }
+ else if (document.getElementById('myText01').value == 3){
+ document.getElementById('myDiv01').innerHTML += '<br>It is a Three, input was: '+ document.getElementById('myText01').value
+ }
+ else if (document.getElementById('myText01').value == 2){
+ document.getElementById('myDiv01').innerHTML += '<br>It is a Two, input was: '+ document.getElementById('myText01').value
+ }
+ else if (document.getElementById('myText01').value == 1){
+ document.getElementById('myDiv01').innerHTML += '<br>It is a One, input was: '+ document.getElementById('myText01').value
+ }
+ else if (document.getElementById('myText01').value == 0){
+ document.getElementById('myDiv01').innerHTML += '<br>It is a Zero, input was: '+ document.getElementById('myText01').value
+ }
+ else {
+   document.getElementById('myDiv01').innerHTML = ''    
+
+ }
+}">
+
+<div id="myDiv01">...</div>

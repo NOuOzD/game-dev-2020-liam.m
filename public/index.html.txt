@@ -8,7 +8,7 @@
 <li><a href="T3A04-web-Basics-by-Liam.html">T3A04-web-Basics-by-Liam.html</a>
 <li><a href="t3A05-Advanced-Web-Pages-by-Liam.html">t3A05-Advanced-Web-Pages-by-Liam.html</a>
 <li><a href="T3A06-Input-Output-Function-Liam.html">T3A06-Input-Output-Function-Liam.html</a>
-<li><a href="...">...</a>
+<li><a href="T3A07-Decisions-by-Liam.html">T3A07-Decisions-by-Liam.html</a>
 <li><a href="...">...</a>
 <li><a href="...">...</a>
 <li><a href="...">...</a>
