@@ -1,7 +1,7 @@
 <h1 align=center>T3A07-Decisions-by-Liam.html </h1>
 <html>
 <body>
-
+<b> from 0 to 10 it works </b>
 <input Id="myText01" type=text value="5">
 <input type="button" value="Decision" onclick="{
 
