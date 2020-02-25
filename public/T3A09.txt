@@ -1,0 +1,31 @@
+<h1 align=center>T3A09-Var-Liam.html </h1>
+
+<script>
+var myX = 3;
+var myInt = 3;
+var myReal = 6.7;
+var myName = 'liam';
+var myChan = 'M';
+var myBaulean = true;
+var myCountry ='Canada';
+var myLastname ='MacAdam';
+
+document.writeln('myX is: '+myX + '<br>')
+
+document.writeln('myInt is: '+myInt + '<br>')
+
+document.writeln('myReal is: '+myReal + '<br>')
+
+document.writeln('myName is: '+myName + '<br>')
+
+document.writeln('myChan is: '+myChan + '<br>')
+
+document.writeln('myBaulean is: '+myBaulean + '<br>')
+
+document.writeln('myCountry is: '+myCountry + '<br>')
+
+document.writeln('myLastname is: '+myLastname + '<br>')
+</script>
+
+
+
