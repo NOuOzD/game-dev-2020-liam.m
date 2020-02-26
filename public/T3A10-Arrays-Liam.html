@@ -1,0 +1,30 @@
+<script>
+let myArray = new Array(20)
+myArray[0] = 'Joe'
+</script>
+<h1 align=center>T3A10-Arrays-Liam.html </h1><hr>
+<input Id="myText01" type=text value="Liam"><br>
+<input Id="myText02" type=text value="Saxon"><br>
+<input Id="myText03" type=text value="Chris"><br>
+
+<input type="button" value="Array Set" onclick="{
+  document.getElementById('myDiv01').innerHTML = '<br>myText01 = '+ document.getElementById('myText01').value
+
+}">
+<input type="button" value="Array Show" onclick="{
+  document.getElementById('myDiv01').innerHTML = 'myArray[0] = '+myArray[0]
+}"><br>
+
+<input Id="myArray[0]" type=text value="20"><br>
+
+<input type="button" value="Loops" onclick="{
+ document.getElementById('myDiv01').innerHTML = ''
+
+for(myX=0; myX <= document.getElementById('myArray[0]').value; myX++){
+ document.getElementById('myDiv01').innerHTML += '<br>Loop #:'+ myX
+
+}
+
+
+}">
+<div id="myDiv01">...</div>
