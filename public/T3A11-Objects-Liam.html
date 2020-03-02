@@ -1,0 +1,64 @@
+<h1 align=center>T3A11-Objects-Liam.html </h1><hr>
+
+<input Id="myText01" type=text value="Liam">
+
+<input type="button" value="Show Object" onclick="{
+
+myObject = {
+  'myName' : document.getElementById('myText01').value,
+  'myHairColor' : 'black',
+  'myNumber' : '17',
+ }
+ document.getElementById('myDiv01').innerHTML = myObject.myNumber + ' name : ' + myObject.myName + ' <br>haircolor : ' + myObject.myHairColor
+
+}">
+
+<div id="myDiv01">...</div>
+<hr>
+
+<p id="myStuff01"></p>
+<script>
+
+var person = {
+  firstName: "Liam",
+  lastName: "MacAdam",
+  age: 17,
+  eyeColor: "Brown"
+};
+
+document.getElementById("myStuff01").innerHTML = person.firstName +" . "+ person.lastName +  " is " + person.age + " years old" + " and has " + person.eyeColor + " eyes.";
+</script>
+<hr>
+
+<input Id="myText02" type=text value="Koby">
+
+<input type="button" value="Show" onclick="{
+
+myObject = {
+  'myDogname' : document.getElementById('myText02').value,
+  'myCatname' : 'kat',
+  'myHousecolor' : 'white',
+ }
+ document.getElementById('myDiv02').innerHTML = ' my dogs name : ' + myObject.myDogname + ' <br>my cats name : ' + myObject.myCatname + ' <br>my house color : ' + myObject.myHousecolor
+
+}">
+
+<div id="myDiv02">...</div>
+<hr>
+
+<p id="myStuff02"></p>
+
+<script>
+var person = {
+  firstName: "Liam",
+  lastName : "MacAdam",
+  id       : 610878,
+  fullName : "Liam david allen MacAdam",
+};
+
+document.getElementById("myStuff02").innerHTML = "firstname: "+ person.firstName +"<br>lastname: "+ person.lastName +" <br>id: "+ person.id + "<br>fullname: "+ person.fullName 
+</script>
+<hr>
+
+
+
