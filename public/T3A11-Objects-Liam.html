@@ -59,6 +59,22 @@ var person = {
 document.getElementById("myStuff02").innerHTML = "firstname: "+ person.firstName +"<br>lastname: "+ person.lastName +" <br>id: "+ person.id + "<br>fullname: "+ person.fullName 
 </script>
 <hr>
+<script>
+let myArray = {x:30, x:20}
+myArray[0] = 'Liam'
+myArray[1] = 'MacAdam'
+myArray[2] = '610878'
+</script>
 
-
+<input type="button" value="Firstname" onclick="{
+  document.getElementById('myDiv03').innerHTML = 'myArray[0] = '+myArray[0]
+}"><br>
+<input type="button" value="Lastname" onclick="{
+  document.getElementById('myDiv03').innerHTML = 'myArray[1] = '+myArray[1]
+}"><br>
+<input type="button" value="ID" onclick="{
+  document.getElementById('myDiv03').innerHTML = 'myArray[2] = '+myArray[2]
+}"><br>
+<div id="myDiv03">...</div>
+<hr>
 

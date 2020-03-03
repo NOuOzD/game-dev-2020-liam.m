@@ -1,3 +1,7 @@
+<script>
+let myArray = new Array(20)
+myArray[0] = 'andrew'
+</script>
 <h1 align=center>T3A11-Objects-Liam.html </h1><hr>
 
 <input Id="myText01" type=text value="Liam">
@@ -59,6 +63,8 @@ var person = {
 document.getElementById("myStuff02").innerHTML = "firstname: "+ person.firstName +"<br>lastname: "+ person.lastName +" <br>id: "+ person.id + "<br>fullname: "+ person.fullName 
 </script>
 <hr>
+<input type="button" value="Array Show" onclick="{
+  document.getElementById('myDiv01').innerHTML = 'myArray[0] = '+myArray[0]
 
 
 
