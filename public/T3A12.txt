@@ -1,0 +1,33 @@
+<script>
+
+function myFun(myVar){ document.getElementById('myDiv01').innerHTML = 'Hello how are you today '+myVar
+}
+function mySec(myRay){ document.getElementById('myDiv02').innerHTML = 'Good day '+myRay
+
+}
+</script>
+
+<h1 align=center>T3A12-Function-pass-Liam.html </h1><hr>
+
+Enter a Name: <input type=text id= "myText01" value="Liam">
+
+<input type="button" value="Say hi" onclick="{
+
+myFun(document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value)
+
+
+}"><br>
+
+<div id="myDiv01">...</div>
+<hr>
+
+Enter a Name: <input type=text id= "myText02" value="Liam">
+
+<input type="button" value="Hello" onclick="{
+
+mySec(document.getElementById('myDiv02').innerHTML = document.getElementById('myText02').value)
+
+
+}"><br>
+
+<div id="myDiv02">...</div>

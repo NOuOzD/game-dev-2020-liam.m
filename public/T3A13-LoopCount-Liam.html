@@ -1,0 +1,16 @@
+<h1 align=center>T3A13-LoopCount-Liam.html </h1><hr>
+
+<input Id="myText01" type=text value="10">
+
+<input type="button" value="LoopCount" onclick="{
+ document.getElementById('myDiv01').innerHTML = ''
+
+for(myX=0; myX <= document.getElementById('myText01').value; myX++){ 
+ document.getElementById('myDiv01').innerHTML +='<br> '+ myX 
+ 
+if (myX === 3) { continue; }
+ }
+
+}">
+
+<div id="myDiv01">...</div>

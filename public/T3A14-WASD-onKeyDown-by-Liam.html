@@ -1,0 +1,27 @@
+<body onkeydown="{
+   document.all.myText01.value = event.key
+ 
+   if (event.key == 'd') { // d = go right
+     document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+   }
+
+   if (event.key == 'w') { // w = go up
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+   }
+
+   if (event.key == 's') { // s = go down
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+   }
+
+   if (event.key == 'a') { // a = go left
+     document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+   }
+   
+ }">
+
+<h1 align=center>T3A14-WASD-onKeyDown-by-Liam.html </h1><hr>
+
+<input id="myText01" type=text value=0 size=6 ><br>
+
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c95afe55141759.59784f5c6405d.jpg" id="myImage01" style="position:relative; z-index:-1; left:0px; top:0px; height:100px; width:100px;">
+ 
