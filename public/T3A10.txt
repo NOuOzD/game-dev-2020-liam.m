@@ -28,3 +28,10 @@ for(myX=0; myX <= document.getElementById('myArray[0]').value; myX++){
 
 }">
 <div id="myDiv01">...</div>
+<hr>
+<input Id="myText04" type=text value="Liam"><br>
+
+<input type="button" value="Array show" onclick="{
+  document.getElementById('myDiv02').innerHTML =
+
+

@@ -1,14 +1,29 @@
 <h1 align=center>T3A13-LoopCount-Liam.html </h1><hr>
 
-<input Id="myText01" type=text value="10">
+<input Id="myText01" type=text value="20">
 
 <input type="button" value="LoopCount" onclick="{
  document.getElementById('myDiv01').innerHTML = ''
 
 for(myX=0; myX <= document.getElementById('myText01').value; myX++){ 
- document.getElementById('myDiv01').innerHTML +='<br> '+ myX 
- 
-if (myX === 3) { continue; }
+ document.getElementById('myDiv01').innerHTML += + myX 
+
+if (myX == 2){
+   document.getElementById('myDiv01').innerHTML += '<br>'
+ }
+if (myX == 5){
+   document.getElementById('myDiv01').innerHTML += '<br>'
+ }
+if (myX == 0){
+   document.getElementById('myDiv01').innerHTML += '<br>'
+ }
+if (myX == 9){
+   document.getElementById('myDiv01').innerHTML += '<br>'
+ }
+if (myX == 14){
+   document.getElementById('myDiv01').innerHTML += '<br>'
+ }
+
  }
 
 }">

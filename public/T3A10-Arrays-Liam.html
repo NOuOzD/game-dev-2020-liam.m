@@ -1,6 +1,9 @@
 <script>
 let myArray = new Array(20)
 myArray[0] = 'Joe'
+myArray[1] = 'Saab, Volvo, BMW'
+myArray[2] = 'Minecraft, Roblox, GTA'
+myArray[3] = 'Sushi, Pizza, Korean BBQ'
 </script>
 <h1 align=center>T3A10-Arrays-Liam.html </h1><hr>
 <input Id="myText01" type=text value="Liam"><br>
@@ -28,3 +31,26 @@ for(myX=0; myX <= document.getElementById('myArray[0]').value; myX++){
 
 }">
 <div id="myDiv01">...</div>
+<hr>
+<input Id="myText04" type=text value="cars"><br>
+
+<input type="button" value="show" onclick="{
+  document.getElementById('myDiv02').innerHTML = '<br>myCars = '+ myArray[1]
+
+}">
+<div id="myDiv02">...</div>
+<hr>
+<input type="button" value="show" onclick="{
+  document.getElementById('myDiv03').innerHTML = '<br>myGames = '+ myArray[2]
+
+}">
+<div id="myDiv03">...</div>
+<hr>
+<input type="button" value="show" onclick="{
+  document.getElementById('myDiv04').innerHTML = '<br>myFoods = '+ myArray[3]
+
+}">
+<div id="myDiv04">...</div>
+
+
+
