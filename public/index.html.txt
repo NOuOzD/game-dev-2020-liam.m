@@ -20,9 +20,13 @@
 <li><a href="T4A02-Collisions-and-auto-background-by-Liam.html">T4A02-Collisions-and-auto-background-by-Liam.html</a>
 <li><a href="t4a03-complete-liam.html">t4a03-complete-liam.html</a>
 <li><a href="t4a04-maze-liam.html">t4a04-maze-liam.html</a>
+<li><a href="T4A05-template-with-wasd-and-score-by-Liam.html">T4A05-template-with-wasd-and-score-by-Liam.html</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="...">...</a>
+<li><a href="T4-final-project-level1-Liam.html">T4-final-project-level1-Liam.html</a>
 <li><a href="...">...</a>
 <li><a href="...">...</a>
 <li><a href="...">...</a>
 <li><a href="...">...</a>
-<li><a href="T4-final-project-level1-Fred.html">T4-final-project-level1-Fred.html</a>
 
