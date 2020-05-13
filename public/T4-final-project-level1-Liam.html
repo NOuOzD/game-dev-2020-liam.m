@@ -8,7 +8,9 @@
    let myGlobalX = 0
    let myClock
    let myScore = 10
-
+   let myGun01
+   let myGun02
+   let myShooting = 1 
 
    // global functions here
 function myHitOther(my1,my2,my4){
@@ -73,6 +75,19 @@ if ( myHitOther('myImg01','myImg07') ){
     document.getElementById('myImg01').style.left = '20px'
     location = 'T4A01-Collisions-by-Liam.html'     
    }
+ if ( myHitOther('myBullet01','myImg08') ){
+      clearInterval(myGun01)
+      document.getElementById('myBullet01').style.left = '-200px'
+      document.all.myText01.value = 'You shot a Dungeon enemey!'  
+      myScore += 1
+   }   
+   
+   if ( myHitOther('myBullet02','myImg08') ){
+      clearInterval(myGun02)
+      document.getElementById('myBullet02').style.left = '-200px'
+      document.all.myText01.value = 'You shot a Dungeon enemey!'  
+      myScore += 1
+   } 
 
 
 
@@ -82,14 +97,17 @@ if ( myHitOther('myImg01','myImg07') ){
 
 
 </script>
+<img id="myBullet01" src="Resources/myfireball.png"  style="position:absolute; width:30px; height:30px; left: -130px; top:190px;">
+<img id="myBullet02" src="Resources/myfireball.png"  style="position:absolute; width:30px; height:30px; left: -150px; top:190px;">
 
 <img id="myImg01" src="Resources/HeroMain.png" style="position:absolute; width:100px; height:80px; top:30px; left:60px;"  src="Resources/HeroMain.png">
 <img id="myImg02" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:250px; top:60px; left:200px;" src="Resources/MyLavawalls.png"> 
-<img id="myImg03" src="Resources/Wincondition.png" style="position:absolute; width:150px; height:75px; top:450px; left:1000px;" src="Resources/Wincondition.png">
+<img id="myImg03" src="Resources/Wincondition.png" style="position:absolute; width:150px; height:75px; top:400px; left:1000px;" src="Resources/Wincondition.png">
 <img id="myImg04" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:250px; top:60px; left:0px;" src="Resources/MyLavawalls.png">
 <img id="myImg05" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:450px; top:60px; left:0px;" src="Resources/MyLavawalls.png"> 
 <img id="myImg06" src="Resources/MyLavawalls.png" style="position:absolute; width:250px; height:35px; top:300px; left:200px;" src="Resources/MyLavawalls.png">.
-<img id="myImg07" src="Resources/MyLavawalls.png" style="position:absolute; width:500px; height:35px; top:500px; left:0px;" src="Resources/MyLavawalls.png">  
+<img id="myImg07" src="Resources/MyLavawalls.png" style="position:absolute; width:500px; height:35px; top:500px; left:0px;" src="Resources/MyLavawalls.png"> 
+<img id="myImg08" src="Resources/Myenemey.png" style="position:absolute; width:150px; height:100px; top:400px; left:800px;" src="Resources/Myenemey.png"> 
  
 
 <input type=button value="Auto Background Left" onclick="{
@@ -109,31 +127,65 @@ if ( myHitOther('myImg01','myImg07') ){
    if (event.key == 'd') { // d = go right
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
    
-myCheckHit()
 
    }
 
    if (event.key == 's') { // s = go down
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
 
-myCheckHit()
 
    }
 
    if (event.key == 'w') { // w = go up
      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 + 'px'
 
-myCheckHit()
 
    }
 
    if (event.key == 'a') { // w = go left
      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 + 'px'
 
-myCheckHit()
 
    }
+
+ myCheckHit()
    
+ }">
+
+<input type=button value="shoot" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+
+if (myShooting > 2 ){myShooting = 1}
+
+
+
+
+  // Bullet Number 2
+if (myShooting == 2){
+  myShooting += 1
+  document.getElementById('myBullet02').style.left = document.getElementById('myImg01').style.left
+  document.getElementById('myBullet02').style.top  = document.getElementById('myImg01').style.top
+  clearInterval(myGun02)
+  myGun02 = setInterval(function(){
+     document.getElementById('myBullet02').style.left = parseInt(document.getElementById('myBullet02').style.left) + 10 + 'px'
+     myCheckHit() 
+  }, 20)   // speed of bullet faster lower number
+}
+
+
+
+
+  // Bullet Number 1
+if (myShooting == 1){
+  myShooting += 1
+  document.getElementById('myBullet01').style.left = document.getElementById('myImg01').style.left
+  document.getElementById('myBullet01').style.top  = document.getElementById('myImg01').style.top
+  clearInterval(myGun01)
+  myGun01 = setInterval(function(){
+     document.getElementById('myBullet01').style.left = parseInt(document.getElementById('myBullet01').style.left) + 10 + 'px'
+     myCheckHit() 
+  }, 20)   // speed of bullet faster lower number
+}
+
  }">
 
 <input id="myText01" type=text value=0 size=38 ><br>
