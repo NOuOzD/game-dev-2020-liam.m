@@ -64,6 +64,48 @@ if ( myHitOther('myImg01','myImg07') ){
       document.all.myText01.value = 'You hit a lava wall!'  
       myScore -= 1
    }
+if ( myHitOther('myImg01','myImg08') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a enemey!'  
+      myScore -= 5
+   }
+if ( myHitOther('myImg01','myImg09') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg010') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg011') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg012') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg013') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg014') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
     if (myScore <= 0){
     document.all.myText01.value = 'You Lose scrore at zero!'  
     alert('Sorry you lose')
@@ -106,8 +148,15 @@ if ( myHitOther('myImg01','myImg07') ){
 <img id="myImg04" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:250px; top:60px; left:0px;" src="Resources/MyLavawalls.png">
 <img id="myImg05" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:450px; top:60px; left:0px;" src="Resources/MyLavawalls.png"> 
 <img id="myImg06" src="Resources/MyLavawalls.png" style="position:absolute; width:250px; height:35px; top:300px; left:200px;" src="Resources/MyLavawalls.png">.
-<img id="myImg07" src="Resources/MyLavawalls.png" style="position:absolute; width:500px; height:35px; top:500px; left:0px;" src="Resources/MyLavawalls.png"> 
-<img id="myImg08" src="Resources/Myenemey.png" style="position:absolute; width:150px; height:100px; top:400px; left:800px;" src="Resources/Myenemey.png"> 
+<img id="myImg07" src="Resources/MyLavawalls.png" style="position:absolute; width:700px; height:35px; top:500px; left:0px;" src="Resources/MyLavawalls.png"> 
+<img id="myImg08" src="Resources/Myenemey.png" style="position:absolute; width:150px; height:100px; top:100px; left:800px;" src="Resources/Myenemey.png">
+<img id="myImg09" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:270px; top:65px; left:450px;" src="Resources/MyLavawalls.png">
+<img id="myImg010" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:290px; top:250px; left:670px;" src="Resources/MyLavawalls.png">
+<img id="myImg011" src="Resources/MyLavawalls.png" style="position:absolute; width:300px; height:35px; top:250px; left:670px;" src="Resources/MyLavawalls.png"> 
+<img id="myImg012" src="Resources/MyLavawalls.png" style="position:absolute; width:740px; height:35px; top:65px; left:450px;" src="Resources/MyLavawalls.png">
+<img id="myImg013" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:290px; top:250px; left:950px;" src="Resources/MyLavawalls.png">
+<img id="myImg014" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:440px; top:100px; left:1150px;" src="Resources/MyLavawalls.png">
+  
  
 
 <input type=button value="Auto Background Left" onclick="{
