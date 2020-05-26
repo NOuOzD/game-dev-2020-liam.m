@@ -120,6 +120,7 @@ if ( myHitOther('myImg01','myImg014') ){
  if ( myHitOther('myBullet01','myImg08') ){
       clearInterval(myGun01)
       document.getElementById('myBullet01').style.left = '-200px'
+      document.getElementById('myImg08').style.left = '-200px'
       document.all.myText01.value = 'You shot a Dungeon enemey!'  
       myScore += 1
    }   
@@ -127,6 +128,7 @@ if ( myHitOther('myImg01','myImg014') ){
    if ( myHitOther('myBullet02','myImg08') ){
       clearInterval(myGun02)
       document.getElementById('myBullet02').style.left = '-200px'
+      document.getElementById('myImg08').style.left = '-200px'
       document.all.myText01.value = 'You shot a Dungeon enemey!'  
       myScore += 1
    } 
