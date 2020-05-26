@@ -148,11 +148,18 @@ if ( myHitOther('myImg01','myImg07') ){
 
    }
 
+   if (event.key == 'z') { // w = shoot
+     document.getElementById('myShootButton').click()
+
+
+   }
+
+
  myCheckHit()
    
  }">
 
-<input type=button value="shoot" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button value="shoot" id="myShootButton" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
 
 if (myShooting > 2 ){myShooting = 1}
 

@@ -64,6 +64,12 @@ if ( myHitOther('myImg01','myImg07') ){
       document.all.myText01.value = 'You hit a lava wall!'  
       myScore -= 1
    }
+if ( myHitOther('myImg01','myImg08') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a enemey!'  
+      myScore -= 5
+   }
     if (myScore <= 0){
     document.all.myText01.value = 'You Lose scrore at zero!'  
     alert('Sorry you lose')
@@ -148,11 +154,18 @@ if ( myHitOther('myImg01','myImg07') ){
 
    }
 
+   if (event.key == 'z') { // w = shoot
+     document.getElementById('myShootButton').click()
+
+
+   }
+
+
  myCheckHit()
    
  }">
 
-<input type=button value="shoot" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button value="shoot" id="myShootButton" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
 
 if (myShooting > 2 ){myShooting = 1}
 
