@@ -1,6 +1,25 @@
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://i.pinimg.com/564x/3f/94/c5/3f94c58055ea656151b93911428c7473.jpg">
+<body id="myBody" onLoad="{
 
-<title> Dogma lvl 1 </title>
+  clearInterval(myTimer02)
+  myTimer02 = setInterval(function(){
+     let my02x = Math.floor((Math.random() * 20) - 20) 
+     let my02y = Math.floor((Math.random() * 20) - 10) 
+     document.getElementById('myImg08').style.left = parseInt(document.getElementById('myImg08').style.left) + my02x + 'px'
+     document.getElementById('myImg08').style.top  = parseInt(document.getElementById('myImg08').style.top)  + my02y + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+clearInterval(myTimer03)
+  myTimer02 = setInterval(function(){
+     let my02x = Math.floor((Math.random() * 20) - 20) 
+     let my02y = Math.floor((Math.random() * 20) - 10) 
+     document.getElementById('myImg020').style.left = parseInt(document.getElementById('myImg020').style.left) + my02x + 'px'
+     document.getElementById('myImg020').style.top  = parseInt(document.getElementById('myImg020').style.top)  + my02y + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)  
+
+}" style="background-repeat:repeat; background-size: 80%" background="https://i.pinimg.com/564x/3f/94/c5/3f94c58055ea656151b93911428c7473.jpg">
+
+<title> Dogma lvl 2 </title>
 
 <script>
 
@@ -10,7 +29,9 @@
    let myScore = 10
    let myGun01
    let myGun02
-   let myShooting = 1 
+   let myShooting = 1
+   let myTimer02
+   let myTimer03 
 
    // global functions here
 function myHitOther(my1,my2,my4){
@@ -70,6 +91,16 @@ if ( myHitOther('myImg01','myImg08') ){
       document.all.myText01.value = 'You hit a enemey!'  
       myScore -= 5
    }
+if ( myHitOther('myImg08','myImg019') ){
+      document.getElementById('myImg08').style.left = '1500px'
+      document.getElementById('myImg08').style.top = '600px'  
+     
+   }
+if ( myHitOther('myImg020','myImg019') ){
+      document.getElementById('myImg020').style.left = '1000px'
+      document.getElementById('myImg020').style.top = '100px'  
+     
+   }
 if ( myHitOther('myImg01','myImg09') ){
       document.getElementById('myImg01').style.left = '60px'
       document.getElementById('myImg01').style.top = '30px'
@@ -106,6 +137,36 @@ if ( myHitOther('myImg01','myImg014') ){
       document.all.myText01.value = 'You hit a lava wall!'  
       myScore -= 1
    }
+if ( myHitOther('myImg01','myImg015') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg016') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg017') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg018') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a lava wall!'  
+      myScore -= 1
+   }
+if ( myHitOther('myImg01','myImg020') ){
+      document.getElementById('myImg01').style.left = '60px'
+      document.getElementById('myImg01').style.top = '30px'
+      document.all.myText01.value = 'You hit a enemey!'  
+      myScore -= 5
+   }
     if (myScore <= 0){
     document.all.myText01.value = 'You Lose scrore at zero!'  
     alert('Sorry you lose')
@@ -113,9 +174,9 @@ if ( myHitOther('myImg01','myImg014') ){
    }
     if ( myHitOther('myImg01','myImg03') ){
     document.all.myText01.value = 'You got the gem! and you win the Level!'  
-    alert('You Win, now go to the next level')
+    alert('You Win, Congratulations!')
     document.getElementById('myImg01').style.left = '20px'
-    location = 'T4-final-project-level2-liam.html'     
+    location = 'T4-final-project-level1-Liam.html'     
    }
  if ( myHitOther('myBullet01','myImg08') ){
       clearInterval(myGun01)
@@ -131,11 +192,34 @@ if ( myHitOther('myImg01','myImg014') ){
       document.getElementById('myImg08').style.left = '-200px'
       document.all.myText01.value = 'You shot a Dungeon enemey!'  
       myScore += 1
-   } 
+   }
+if ( myHitOther('myBullet01','myImg020') ){
+      clearInterval(myGun01)
+      document.getElementById('myBullet01').style.left = '-200px'
+      document.getElementById('myImg020').style.left = '-200px'
+      document.all.myText01.value = 'You shot a Dungeon enemey!'  
+      myScore += 1
+   }
+if ( myHitOther('myBullet02','myImg020') ){
+      clearInterval(myGun02)
+      document.getElementById('myBullet02').style.left = '-200px'
+      document.getElementById('myImg020').style.left = '-200px'
+      document.all.myText01.value = 'You shot a Dungeon enemey!'  
+      myScore += 1
+   }
+ 
+   if( parseInt(document.getElementById('myImg01').style.left) > window.innerWidth - document.getElementById('myImg01').width ){
+       document.getElementById('myImg01').style.left = '10px'
+   }
 
+  if( parseInt(document.getElementById('myImg08').style.left) > window.innerWidth - document.getElementById('myImg08').width ){
+       document.getElementById('myImg08').style.left = (window.innerWidth / 2) + 'px'
+   }
+if( parseInt(document.getElementById('myImg020').style.left) > window.innerWidth - document.getElementById('myImg020').width ){
+       document.getElementById('myImg020').style.left = (window.innerWidth / 2) + 'px'
+   }
 
-
-   // more if statements here
+  // more if statements here
 
 }
 
@@ -146,18 +230,24 @@ if ( myHitOther('myImg01','myImg014') ){
 
 <img id="myImg01" src="Resources/HeroMain.png" style="position:absolute; width:100px; height:80px; top:30px; left:60px;"  src="Resources/HeroMain.png">
 <img id="myImg02" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:250px; top:60px; left:200px;" src="Resources/MyLavawalls.png"> 
-<img id="myImg03" src="Resources/Wincondition.png" style="position:absolute; width:150px; height:75px; top:400px; left:1000px;" src="Resources/Wincondition.png">
+<img id="myImg03" src="Resources/Wincondition.png" style="position:absolute; width:150px; height:75px; top:400px; left:500px;" src="Resources/Wincondition.png">
 <img id="myImg04" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:250px; top:60px; left:0px;" src="Resources/MyLavawalls.png">
 <img id="myImg05" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:450px; top:60px; left:0px;" src="Resources/MyLavawalls.png"> 
 <img id="myImg06" src="Resources/MyLavawalls.png" style="position:absolute; width:250px; height:35px; top:300px; left:200px;" src="Resources/MyLavawalls.png">.
-<img id="myImg07" src="Resources/MyLavawalls.png" style="position:absolute; width:700px; height:35px; top:500px; left:0px;" src="Resources/MyLavawalls.png"> 
-<img id="myImg08" src="Resources/Myenemey.png" style="position:absolute; width:150px; height:100px; top:100px; left:800px;" src="Resources/Myenemey.png">
-<img id="myImg09" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:270px; top:65px; left:450px;" src="Resources/MyLavawalls.png">
+<img id="myImg07" src="Resources/MyLavawalls.png" style="position:absolute; width:500px; height:35px; top:500px; left:200px;" src="Resources/MyLavawalls.png"> 
+<img id="myImg08" src="Resources/Myenemey.png" style="position:absolute; width:150px; height:100px; top:600px; left:1200px;" src="Resources/Myenemey.png">
+<img id="myImg09" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:470px; top:65px; left:450px;" src="Resources/MyLavawalls.png">
 <img id="myImg010" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:290px; top:250px; left:670px;" src="Resources/MyLavawalls.png">
 <img id="myImg011" src="Resources/MyLavawalls.png" style="position:absolute; width:300px; height:35px; top:250px; left:670px;" src="Resources/MyLavawalls.png"> 
-<img id="myImg012" src="Resources/MyLavawalls.png" style="position:absolute; width:740px; height:35px; top:65px; left:450px;" src="Resources/MyLavawalls.png">
+<img id="myImg012" src="Resources/MyLavawalls.png" style="position:absolute; width:950px; height:35px; top:65px; left:450px;" src="Resources/MyLavawalls.png">
 <img id="myImg013" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:290px; top:250px; left:950px;" src="Resources/MyLavawalls.png">
-<img id="myImg014" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:440px; top:100px; left:1150px;" src="Resources/MyLavawalls.png">
+<img id="myImg014" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:250px; top:100px; left:1150px;" src="Resources/MyLavawalls.png">
+<img id="myImg015" src="Resources/MyLavawalls.png" style="position:absolute; width:1400px; height:35px; top:700px; left:0px;" src="Resources/MyLavawalls.png">
+<img id="myImg016" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:200px; top:500px; left:0px;" src="Resources/MyLavawalls.png">
+<img id="myImg017" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:600px; top:100px; left:1365px;" src="Resources/MyLavawalls.png">
+<img id="myImg018" src="Resources/MyLavawalls.png" style="position:absolute; width:230px; height:35px; top:500px; left:950px;" src="Resources/MyLavawalls.png">
+<img id="myImg019" src="Resources/MyLavawalls.png" style="position:absolute; width:35px; height:1050px; top:0px; left:-30px;" src="Resources/MyLavawalls.png">
+<img id="myImg020" src="Resources/Myenemey.png" style="position:absolute; width:150px; height:100px; top:100px; left:1200px;" src="Resources/Myenemey.png">
   
  
 
@@ -246,7 +336,10 @@ if (myShooting == 1){
 
  }">
 
+
 <input id="myText01" type=text value=0 size=38 ><br>
+
+
 
 
 

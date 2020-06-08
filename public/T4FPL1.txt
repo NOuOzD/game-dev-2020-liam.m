@@ -1,6 +1,6 @@
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://i.pinimg.com/564x/3f/94/c5/3f94c58055ea656151b93911428c7473.jpg">
 
-<title> Dogma </title>
+<title> Dogma lvl 1 </title>
 
 <script>
 
@@ -115,7 +115,7 @@ if ( myHitOther('myImg01','myImg014') ){
     document.all.myText01.value = 'You got the gem! and you win the Level!'  
     alert('You Win, now go to the next level')
     document.getElementById('myImg01').style.left = '20px'
-    location = 'T4A01-Collisions-by-Liam.html'     
+    location = 'T4-final-project-level2-liam.html'     
    }
  if ( myHitOther('myBullet01','myImg08') ){
       clearInterval(myGun01)
